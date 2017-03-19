@@ -1,4 +1,4 @@
-package com.Ashley.ntuapp;
+package com.techease.ntuapp;
 
 import org.junit.Test;
 

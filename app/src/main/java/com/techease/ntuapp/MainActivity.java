@@ -1,4 +1,4 @@
-package com.Ashley.ntuapp;
+package com.techease.ntuapp;
 
 import android.app.Fragment;
 import android.os.Bundle;
@@ -10,6 +10,8 @@ import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
+
+import com.google.android.gms.maps.MapFragment;
 
 public class MainActivity extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {
@@ -73,9 +75,11 @@ public class MainActivity extends AppCompatActivity
         int id = item.getItemId();
 
         if (id == R.id.nav_home) {
-            // Handle the camera action
+            fragment = new HomeFragment();
+            getFragmentManager().beginTransaction().
+                    replace(R.id.fragmentContainer, fragment).commit();
         } else if (id == R.id.nav_map) {
-            fragment = new MapFragment();
+            fragment = new MapsFragment();
             getFragmentManager().beginTransaction().
                     replace(R.id.fragmentContainer, fragment).commit();
         } else if (id == R.id.nav_employers) {

@@ -1,4 +1,4 @@
-package com.Ashley.ntuapp;
+package com.techease.ntuapp;
 
 import android.app.Fragment;
 import android.app.ProgressDialog;
@@ -49,7 +49,9 @@ public class EmployersFragment extends Fragment {
         View v = inflater.inflate(R.layout.fragment_employers, container, false);
         progressDialog = new ProgressDialog(getActivity());
         progressDialog.setMessage("Loading Data");
+        progressDialog.setCancelable(false);
         progressDialog.show();
+
         final ValueEventListener userListener;
         Firebase.setAndroidContext(getActivity());
         mAuth = FirebaseAuth.getInstance();

@@ -11,7 +11,7 @@
     <ImageView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        app:srcCompat="@drawable/home_screen_image"
+        app:srcCompat="@drawable/map_screen_image"
         android:layout_marginTop="10dp"
         android:id="@+id/imageView2"
         android:layout_alignParentTop="true"

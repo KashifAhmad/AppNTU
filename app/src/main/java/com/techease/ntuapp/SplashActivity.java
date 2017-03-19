@@ -1,4 +1,4 @@
-package com.Ashley.ntuapp;
+package com.techease.ntuapp;
 
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
@@ -6,6 +6,7 @@ import android.os.Bundle;
 import android.widget.ImageView;
 
 import com.skyfishjy.library.RippleBackground;
+import com.techease.ntuapp.MainActivity;
 
 public class SplashActivity extends AppCompatActivity {
 

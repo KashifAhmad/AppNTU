@@ -1,13 +1,36 @@
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context="com.techease.ntuapp.FutureHubFragment">
 
     <!-- TODO: Update blank fragment layout -->
+
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/future_hub_image"
+        android:id="@+id/imageView3"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
     <TextView
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="Future Hub" />
-
-</FrameLayout>
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:textSize="18sp"
+        android:text="FutureHub is your way to engage talented students and graduates from many specialist disciplines to bring new ideas, energy and benefits to your business, with the dedicated support of the Business Development Team.
+Here you can advertise your opportunities, raise your profile on campus and learn more about the services we offer. Registration only takes a few minutes and once verified you will be able to access all of our on-line services as well as manage your account and existing opportunities.
+For more info visit:
+https://futurehub.ntu.ac.uk
+"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/imageView3"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="16dp"
+        android:layout_marginStart="16dp"
+        android:id="@+id/textView2" />
+</RelativeLayout>
