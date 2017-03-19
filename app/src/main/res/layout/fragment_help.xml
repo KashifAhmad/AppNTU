@@ -9,23 +9,8 @@
     <TextView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
+        android:id="@+id/tvHelp"
         android:textSize="20sp"
-        android:textStyle="bold"
-        android:text="Need any help or have any questions regarding the event? Please feel free to contact us.
-
-Phone: 0204594924
-
-Email: example@email.com
-
-Address: Employability Team
-Nottingham Trent University
-Burton Street
-Nottingham
-NG1 4BU
-
-
-Opening times: 9:00 – 16:00
-
-" />
+        android:textStyle="bold" />
 
 </FrameLayout>

@@ -1,13 +1,23 @@
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:padding="16dp"
     tools:context="com.techease.ntuapp.FutureHubFragment">
 
     <!-- TODO: Update blank fragment layout -->
 
+<TableLayout
+    android:layout_height="wrap_content"
+    android:layout_width="wrap_content"
+    android:orientation="vertical">
+    <TextView android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:textStyle="bold"
+        android:textSize="20sp"
 
+        android:text="What is future hub?"></TextView>
     <ImageView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -19,12 +29,10 @@
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:textStyle="bold"
         android:textSize="18sp"
         android:text="FutureHub is your way to engage talented students and graduates from many specialist disciplines to bring new ideas, energy and benefits to your business, with the dedicated support of the Business Development Team.
 Here you can advertise your opportunities, raise your profile on campus and learn more about the services we offer. Registration only takes a few minutes and once verified you will be able to access all of our on-line services as well as manage your account and existing opportunities.
-For more info visit:
-https://futurehub.ntu.ac.uk
+For more info visit:\nhttps://futurehub.ntu.ac.uk
 "
         android:layout_marginTop="20dp"
         android:layout_below="@+id/imageView3"
@@ -33,4 +41,5 @@ https://futurehub.ntu.ac.uk
         android:layout_marginLeft="16dp"
         android:layout_marginStart="16dp"
         android:id="@+id/textView2" />
-</RelativeLayout>
+</TableLayout>
+</ScrollView>

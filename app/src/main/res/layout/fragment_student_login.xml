@@ -5,7 +5,7 @@
     android:layout_height="match_parent"
     android:paddingLeft="50dp"
     android:paddingRight="50dp"
-    android:background="@color/rippelColor"
+    android:background="@color/itemColor"
     tools:context="com.techease.ntuapp.StudentLoginFragment">
 
     <LinearLayout

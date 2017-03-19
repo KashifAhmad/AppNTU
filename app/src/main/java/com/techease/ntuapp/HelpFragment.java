@@ -6,6 +6,7 @@ import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.TextView;
 
 
 /**
@@ -62,8 +63,20 @@ public class HelpFragment extends Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
+        View view =  inflater.inflate(R.layout.fragment_help, container, false);
+
+        TextView tvHelp = (TextView)view.findViewById(R.id.tvHelp);
+        tvHelp.setText("Need any help or have any questions regarding the event? Please feel free to contact us.\n\n" +
+                "Phone: 0204594924\n\n" +
+                "Email: example@email.com\n\n" +
+                "Address: Employability Team" +
+                "Nottingham Trent University" +
+                "Burton Street" +
+                "Nottingham" +
+                "NG1 4BU\n\n" +
+                "Opening times: 9:00 – 16:00");
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_help, container, false);
+        return view;
     }
 
     // TODO: Rename method, update argument and hook method into UI event
